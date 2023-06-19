@@ -1,0 +1,42 @@
+body {
+  flex-direction: row;
+  display: flex;
+}
+
+.message {
+  width: 25%;
+}
+
+.media {
+  width: 75%;
+}
+
+video {
+  width: 100%;
+}
+
+.splide {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
