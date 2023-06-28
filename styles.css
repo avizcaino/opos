@@ -1,6 +1,6 @@
-@import url("assets/fonts/daniel_black_macroman/stylesheet.css");
-@import url("assets/fonts/daniel_bold_macroman/stylesheet.css");
-@import url("assets/fonts/daniel_regular_macroman/stylesheet.css");
+@import url("/assets/fonts/daniel_black_macroman/stylesheet.css");
+@import url("/assets/fonts/daniel_bold_macroman/stylesheet.css");
+@import url("/assets/fonts/daniel_regular_macroman/stylesheet.css");
 @import url("https://fonts.cdnfonts.com/css/noteworthy");
 
 /* body {
