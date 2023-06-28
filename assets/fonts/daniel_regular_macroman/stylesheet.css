@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "danielregular";
+  src: url("Daniel-Regular-webfont.eot");
+  src: url("Daniel-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("Daniel-Regular-webfont.woff") format("woff"),
+    url("Daniel-Regular-webfont.ttf") format("truetype"),
+    url("Daniel-Regular-webfont.svg#danielregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

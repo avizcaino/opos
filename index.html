@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
   <head>
-    <title>Video y Carrusel</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Els Microespais</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!-- <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script> -->
-    <!-- Link to the file hosted on your server, -->
-    <!-- <link
-      rel="stylesheet"
-      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
-    /> -->
+    <script type="module" src="script.js"></script>
   </head>
   <body>
-    <div class="message">
-      <div>
+    <h1>Els Microespais</h1>
+    <div class="container">
+      <hr style="margin-left: 0" />
+      <div class="message">
         Els microespais ofereixen una organització de l'espai on l'infant és
         constructor del seu aprenentatge, a través de l'experimentació, la
         descoberta, la investigacio i el joc, de forma autônoma i en relació amb
         els companys. És l'infant el que busca les estratègies i pren les
         decisions per a resoldre les situacions que se li plantegen.
       </div>
-    </div>
-    <div class="media">
+      <hr style="margin-right: 0" />
+
       <div class="video-container">
-        <video src="video.mp4" controls autoplay></video>
+        <video src="assets/video/walkthrough.MP4" controls autoplay></video>
       </div>
       <div class="carousel">
         <section
@@ -32,33 +31,110 @@
         >
           <div class="splide__track">
             <div class="splide__list">
-              <img class="splide__slide" src="1.jpg" alt="img" />
-              <img class="splide__slide" src="2.jpg" alt="img" />
-              <img class="splide__slide" src="3.jpg" alt="img" />
-              <img class="splide__slide" src="4.jpg" alt="img" />
-              <img class="splide__slide" src="5.jpg" alt="img" />
+              <img
+                class="splide__slide"
+                src="assets/images/CIENTÍFICS.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/CLASSE DEL ESPÍGOL.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/CONSTRUÏM.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/IL·LUMINA'M.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/IMAGINA I CREA.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/JO SÓC.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/MICROESPAIS.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/MINI MONS.jpg"
+                alt="img"
+              />
+              <img
+                class="splide__slide"
+                src="assets/images/SENTIM.jpg"
+                alt="img"
+              />
             </div>
           </div>
+          <!-- Add the progress bar element -->
+          <div class="my-carousel-progress">
+            <div class="my-carousel-progress-bar"></div>
+          </div>
         </section>
-        <ul id="thumbnails" class="thumbnails">
-          <li class="thumbnail">
-            <img src="1.jpg" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="2.jpg" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="3.jpg" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="4.jpg" alt="" />
-          </li>
-          <li class="thumbnail">
-            <img src="5.jpg" alt="" />
-          </li>
-        </ul>
+
+        <section
+          id="thumbnail-carousel"
+          class="splide"
+          aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/images/CIENTÍFICS.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/CLASSE DEL ESPÍGOL.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/CONSTRUÏM.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/IL·LUMINA'M.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/IMAGINA I CREA.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/JO SÓC.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/MICROESPAIS.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/MINI MONS.jpg" alt="" />
+              </li>
+              <li class="splide__slide">
+                <img src="assets/images/SENTIM.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
+
+      <hr style="margin-left: 0" />
+      <div class="message">
+        La importància d'emocionar a l'infant amb les propostes és vital per tal
+        que es produeixi l'aprenentatge, com diu Francisco Mora, "sense emoció
+        no hi ha curiositat, no hi ha atenció, no hi ha memòria, no hi ha
+        aprenentatge".
+      </div>
+      <hr style="margin-right: 0" />
     </div>
-    <script type="module" src="script.js"></script>
+
+    <dialog class="dialog">
+      <img class="dialog-img" alt="enlarged-image" />
+    </dialog>
   </body>
 </html>

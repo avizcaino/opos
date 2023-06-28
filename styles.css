@@ -1,42 +1,96 @@
-body {
+@import url("assets/fonts/daniel_black_macroman/stylesheet.css");
+@import url("assets/fonts/daniel_bold_macroman/stylesheet.css");
+@import url("assets/fonts/daniel_regular_macroman/stylesheet.css");
+@import url("https://fonts.cdnfonts.com/css/noteworthy");
+
+/* body {
   flex-direction: row;
   display: flex;
+} */
+
+.container {
+  flex-direction: column;
+  margin: 100px;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  .container {
+    margin: 10px;
+  }
+}
+
+h1 {
+  font-family: "Noteworthy", sans-serif;
+  text-align: center;
+  font-size: 5rem;
 }
 
 .message {
-  width: 25%;
+  font-family: "Noteworthy", sans-serif;
+  padding: 1rem;
 }
 
-.media {
+hr {
   width: 75%;
+  height: 10px;
+  background-color: rgba(217, 207, 191);
+  border-style: none;
+  border-width: 0;
 }
 
 video {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .splide {
-  width: 50%;
   margin: 0 auto;
 }
 
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
+.my-carousel-progress {
+  background: #fff;
 }
 
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
+.my-carousel-progress-bar {
+  background-color: rgba(217, 207, 191);
+  height: 10px;
+  transition: width 400ms ease;
+  width: 0;
 }
 
-.thumbnail img {
+.splide__slide img {
   width: 100%;
   height: auto;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.dialog {
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.dialog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 9999;
 }
